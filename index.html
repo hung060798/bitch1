@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+</head>
+<body>
+<h1 style=' color: hotpink;font-family: "Pattaya", sans-serif; '>cảm nhận về chính mình đi bitch :)))))??</h1>
+<form action="" name="f">
+    <textarea name="txt" cols="40" rows="10" onKeyDown="typeTextarea();"></textarea>
+</form>
+<script>
+    var a=new Array(),n="";
+    a[1]='P';a[2]='H';a[3]='Ư';a[4]='Ợ';a[5]='N';a[6]='G';a[7]=' ';a[8]='L';a[9]='À';a[10]=' ';a[11]='M';a[12]='Ộ';a[13]='T';a[14]=' ';a[15]='C';a[16]='O';a[17]='N';a[18]=' ';a[19]='B';a[20]='I';a[21]='T';a[22]='C';a[23]='H';a[24]='!';
+    function typeTextarea(){
+        t = document.f.txt.value;
+        j = t.length;
+        if(j > 0)
+        {
+            for(var i=1; i<=j; i++)
+            {
+                n = n + a[i];
+                if(i == 24)
+                {
+                    document.f.txt.value = "";
+                    n = "";
+                }
+            }
+        }
+        document.f.txt.value = n;
+        n="";
+        setTimeout("typeTextarea()", 1);}
+</script>
+</body>
+</html>
